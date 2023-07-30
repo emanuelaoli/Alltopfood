@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Sanchez&display=swap");
+
+:root {
+  /* colors****************************/
+  --yellow: #efd345;
+  --green: #78a516;
+  --red: #f57b51;
+
+  /*fonts**********************************/
+  --font-header: Lobster;
+}
+/*font-family: "Comfortaa", cursive;
+font-family: "Lobster", cursive;
+font-family: "Lobster Two", cursive;
+font-family: "Sanchez", serif;*/
+
+/******************removing margin and padding in small screen************************************/
+/*@media (max-width: 978px) {
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}  */
+
+/***navbar****/
+.navbar {
+  background: #fff;
+}
+.navbar-scrolled {
+  background: #78a516;
+  color: white;
+}
+.navbar-toggler {
+  color: var(--green);
+  border: none;
+}
+.navbar-toggler-icon {
+  background-image: none;
+}
+/***hero***/
+.container-hero-img {
+  background: url(../pictures/andy-chilton-0JFveX0c778-unsplash.jpg)
+    center/cover;
+  height: 80vh;
+  margin-bottom: 4rem;
+}
+
+.hero-text {
+  background: white;
+  border: 2px solid yellow;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: absolute;
+  bottom: 1.5rem;
+}
+.hero-h1 {
+  font-family: Lobster;
+}
+.top-recipes {
+  background: url(../pictures/calum-lewis-vA1L1jRTM70-unsplash.jpg) center/cover;
+  height: 50vh;
+}
+
+.recipes-text {
+  background: #fff;
+  border: 2px solid yellow;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 960px) {
+  /*.container-hero-img {
+    margin-right: 4rem;
+  }*/
+  .hero-text {
+    position: absolute;
+    bottom: 4.5rem;
+  }
+  .top-recipes {
+    border: solid yellow 2px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    height: 80vh;
+    background-size: 316px 324px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .recipes-text {
+    border: none;
+  }
+}
