@@ -8,6 +8,17 @@
 
   /*fonts**********************************/
   --font-header: Lobster;
+  --font-main: Comfortaa;
+  --font-h2: Sanchez;
+}
+h1 {
+  font-family: var(--font-header);
+}
+h2 {
+  font-family: var(--font-h2);
+}
+p {
+  font-family: Comfortaa;
 }
 /*font-family: "Comfortaa", cursive;
 font-family: "Lobster", cursive;
@@ -20,7 +31,7 @@ font-family: "Sanchez", serif;*/
     padding: 0;
     margin: 0;
   }
-
+/*
   body {
     padding: 0;
   }
@@ -37,6 +48,7 @@ font-family: "Sanchez", serif;*/
 /***navbar****/
 .navbar {
   background: #fff;
+  transition: all 0.5s;
 }
 .navbar-scrolled {
   background: #78a516;
@@ -49,22 +61,30 @@ font-family: "Sanchez", serif;*/
 .navbar-toggler-icon {
   background-image: none;
 }
+.btn-outline-success {
+  color: var(--green);
+  border-color: var(--green);
+}
 /***hero***/
+
+.container-hero {
+  margin-top: 4rem;
+}
 .container-hero-img {
   background: url(../pictures/andy-chilton-0JFveX0c778-unsplash.jpg)
     center/cover;
   height: 80vh;
-  margin-bottom: 4rem;
+
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .hero-text {
   background: white;
-  border: 2px solid yellow;
+  border: 2px solid var(--green);
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  position: absolute;
-  bottom: 1.5rem;
 }
 .hero-h1 {
   font-family: Lobster;
@@ -76,30 +96,70 @@ font-family: "Sanchez", serif;*/
 
 .recipes-text {
   background: #fff;
-  border: 2px solid yellow;
+  border: 2px solid var(--green);
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.top-recipes-paragraph {
+  display: none;
+}
 
 @media only screen and (min-width: 960px) {
-  /*.container-hero-img {
-    margin-right: 4rem;
-  }*/
-  .hero-text {
-    position: absolute;
-    bottom: 4.5rem;
-  }
   .top-recipes {
-    border: solid yellow 2px;
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
+    border: solid var(--green) 2px;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
     height: 80vh;
-    background-size: 316px 324px;
+    background-size: 22rem 22rem;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom center;
+
+    padding-bottom: 1rem;
+    position: relative;
   }
+  /*.top-recipes-paragraph {
+    text-align: center;
+    display: block;
+  }*/
+
   .recipes-text {
     border: none;
+    position: absolute;
+    top: 0;
   }
+}
+
+/*************carousel************************/
+@media screen and (min-width: 576px) {
+  .carousel-inner {
+    display: flex;
+  }
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100 / 3);
+  }
+}
+.carousel-inner {
+  padding: 1em;
+}
+.recipe-card {
+  margin: 0 0.5em;
+}
+.carousel-item {
+  margin-right: 0;
+}
+
+/*.img-wrapper {
+  max-width: 100%;
+  height: 24vw;
+}
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}*/
+/**********************Footer*******************/
+footer li {
+  font-family: var(--font-main);
 }
