@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Recipe</title>
+    <link
+      rel="stylesheet"
+      href="./css/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- ----------------------------------------Navbar ----------------------------------------->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <div class="col-lg-4">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./pictures/All Top Food Green Logo.svg"
+              class="img-fluid logo logo-img-green"
+              alt=""
+            />
+            <img
+              src="./pictures/All Top Food Logo.svg"
+              class="img-fluid logo logo-img-white"
+              alt=""
+            />
+
+          </a>
+        </div>
+
+        <button
+          class="custom-toggler navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <img src="pictures/hamburger menu.svg" alt="" />
+            <img
+              class="toggler-white"
+              src="pictures/white hamburger menu.svg"
+              alt=""
+            />
+          </span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <!--<a class="nav-link active" aria-current="page" href="#">Home</a>-->
+            <a class="nav-link" href="#">Top Recipes</a>
+            <a class="nav-link" href="#">Categories</a>
+            <a class="nav-link" href="#">Submit Recipe</a>
+          </div>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- ----------------------------------------End of Navbar -------------------->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <!------------------------------------------Post header----------------------------------------------------------->
+          <article>
+            <header class="article-header">
+              <h2>Easy Puff Pastry Spinach Pie</h2>
+              <p>
+                The béchamel sauce is the perfect companion for meat and
+                vegetables. It is the basic ingredient of such dishes like
+                lasagna or gratins. The creamy sauce fits perfectly with the
+                bitter-sweet notes of spinach.
+              </p>
+            </header>
+            <!-- ----------social media icons--------------->
+            <div class="container social-icons">
+              <div class="row">
+                <div class="social-media justify-content-between">
+                  <a class="social-icon" href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+
+                  <a class="social-icon" href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+
+                  <a class="social-icon" href="#">
+                    <i class="fa-brands fa-pinterest"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- ---------- end of social media icons--------------->
+            <div class="container recipe-img">
+              <div class="row">
+                <div class="col-sm-12 col-md-8">
+                  <img
+                    src="./pictures/ella-olsson-KPDbRyFOTnE-unsplash.jpg"
+                    alt="recipe picture"
+                  />
+                </div>
+              </div>
+            </div>
+<!--Prep time -----------Prep time---------------------Prep time-->
+            <div class="recipe-preparation">
+              <p>Prep Time: 20 min</p>
+              <p>Cook Time: 40 min</p>
+              <p>Total: 1 h</p>
+            </div>
+<!-- --------------------Accordion---------------------------------------->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      ingredients
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>1 cup plain breadcrumbs</li>
+                      <li>2 large eggs</li>
+                      <li>1 cup parmesan cheese, grated</li>
+                      <li>3 eggplants, peeled and cit into 1cm rounds</li>
+                      <li>1 teaspoon basil</li>
+                      <li>1 teaspoon oregano</li>
+                      <li>1 ½ cups mozzarella cheese, shredded</li>
+                      <li>72 ounces tomato sauce</li>
+                      <li>Salt to taste</li>
+                      <li>Pepper</li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Instructions
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ol class="instruction-list">
+                      <li>Pour the extra virgin olive oil into a large pan or skillet and add garlic. Cook until garlic is golden.</li>
+                      <li>Then add in the chicken instant bouillon, black pepper and lemon juice.</li>
+                      <li>Cook and stir until the instant bouillon has dissolved.</li>
+                      <li>Place the cooked spaghetti in a large bowl and add the garlic mixture, parsley and shredded Parmesan cheese. Toss all ingredients together and serve immediately.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+  
+           </div>
+
+
+
+            <!-- --------------------recipe description ---------------------------------------->
+            <div class="container recipe-description">
+              <div class="row">
+                <div class="col-sm-12 col-md-8">
+                  <p>
+                    Quick and Easy Garlic and Lemon Pasta </p> 
+                    <p>January 26, 2015</p>
+                    <br>
+                    <p>Prep Time: 20 min</p>
+                    <p>Cook Time: 40 min</p>
+                    <p>Total: 1 h</p>
+                    <br>
+                    <p>INGREDIENTS:</p>
+                    <ul>
+                      <li>1lb of spaghetti, cooked</li>
+                      <li>3 tbsps garlic, minced</li>
+                      <li>½ cup of extra virgin olive oil</li>
+                      <li>6 tbsps lemon juice</li>
+                      <li>4 tsps chicken instant bouillon</li>
+                      <li>½ tsp ground black pepper</li>
+                      <li>½ cup shredded Parmesan cheese</li>
+                      <li>¼ cup parsley</li>
+                    
+                    </ul>
+                    <br>
+                    <p>INSTRUCTIONS:</p>
+                    <p>1. Pour the extra virgin olive oil into a large pan or skillet and add garlic. Cook until garlic is golden.</p>
+                    <p>2. Then add in the chicken instant bouillon, black pepper and lemon juice.</p>
+                    <p>3. Cook and stir until the instant bouillon has dissolved.</p>
+                    <p>4. Place the cooked spaghetti in a large bowl and add the garlic mixture, parsley and shredded Parmesan cheese. Toss all ingredients together and serve immediately.</p>
+                    <p>Serves 8</p>
+                    
+                   
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+ <!-- --------------------suggestions  Adverts ---------------------------------------->
+ <div class="container advert-container">
+  <p>SUGGESTIONS</p>
+ </div>
+ <div class="container">  <!--Adverts --> 
+  <div class="advert-img-wrapper">
+    <img src="./pictures/ricky-singh-27C9frs7tRY-unsplash.jpg" alt="Advert">
+    
+
+  </div>
+  <p class="advert-item">ADVERT ITEM</p>
+  <br>
+
+  <!-- TAGS ------TAGS --------------TAGS-->
+
+  <div class="container tags-container">
+    <p class="tags">Tags</p>
+    <ul class="tags-links">
+      <li class="tags-item">
+        <a href="#">BAKED</a>
+      </li>
+      <li class="tags-item">
+        <a href="#">Eggplant</a>
+      </li>
+      <li class="tags-item">
+        <a href="#">Parmesan</a>
+      </li>
+    </ul>
+
+  </div>
+
+  <!-- End of TAGS ------TAGS --------------End of TAGS-->
+  
+  
+</div>
+</div>
+
+
+    <!-- ---------------------------------------- Footer --------------------------->
+    <div class="container">
+      <footer
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+      >
+        <div class="col mb-3">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">Home</li>
+            <li class="nav-item mb-2">About Us</li>
+            <li class="nav-item mb-2">Contact Us</li>
+          </ul>
+        </div>
+        <div class="col mb-3">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">Submit Your Recipe</li>
+            <li class="nav-item mb-2">Copyright</li>
+            <li class="nav-item mb-2">Privacy and Cookie Policy</li>
+          </ul>
+        </div>
+        <div class="col"></div>
+        <div class="col mb-3">
+            <a class="social-icon" href="#">
+                    <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a class="social-icon" href="#">
+                    <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a class="social-icon" href="#">
+                    <i class="fa-brands fa-pinterest"></i>
+            </a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ----------------------------------------End of Footer -------------------->
+
+    <script src="./Javascript/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="./Javascript/main.js"></script>
+  </body>
+</html>

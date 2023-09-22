@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      rel="stylesheet"
+      href="./css/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Navbar -----------------------Navbar----------------------Navbar------------------->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <div class="col-lg-4">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./pictures/All Top Food Green Logo.svg"
+              class="img-fluid logo logo-img-green"
+              alt=""
+            />
+            <img
+              src="./pictures/All Top Food Logo.svg"
+              class="img-fluid logo logo-img-white"
+              alt=""
+            />
+          </a>
+        </div>
+
+        <button
+          class="custom-toggler navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <img src="pictures/hamburger menu.svg" alt="" />
+            <img
+              class="toggler-white"
+              src="pictures/white hamburger menu.svg"
+              alt=""
+            />
+          </span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <!--<a class="nav-link active" aria-current="page" href="#">Home</a>-->
+            <a class="nav-link" href="#">Top Recipes</a>
+            <a class="nav-link" href="#">Categories</a>
+            <a class="nav-link" href="#">Submit Recipe</a>
+          </div>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--End of Navbar ---------------------End of Navbar----------------------End of Navbar------------------------>
+    <div class="container container-form-recipes">
+      <div class="row">
+        <div class="col-sm-12 col-md-8">
+          <div class="container form-header">
+            <h3>Submit a recipe</h3>
+            <p>
+              This website write about recipes and advice of cooking. If you
+              wish to contact us for any reason or you would share us your
+              personal recipe just cooked we would be happy to do so. We are
+              currently looking for collaborators, the only requirements are
+              passion for cooking and desire to write.
+            </p>
+          </div>
+
+          <!--Form -------------------------------------Form----------------------Form------------------------------------->
+          <div class="container container-form">
+            <form action="">
+              <div class="form-outline mb-4">
+                <label class="form-check-label" for="form4Example1">Name</label>
+                <input type="text" id="form4Example1" class="form-control" />
+              </div>
+
+              <!--Email input-->
+              <div class="form-outline-mb-4">
+                <label class="form-label" for="form4Example2">Email</label>
+                <input type="text" id="form4Example2" class="form-control" />
+              </div>
+              <!--message input-->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form4Example3">Name</label>
+                <textarea
+                  class="form-control"
+                  name=""
+                  id="form4Example3"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <!-- Submit button -->
+              <div class="col-sm-12 col-lg-2">
+                <button type="submit" class="btn btn-form btn-block mb-4 w-100">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="container suggested-recipes">
+            <div class="container recipe-card">
+              <div class="img-wrapper">
+                <a href="#">
+                  <img
+                    class="d-block"
+                    src="./pictures/ella-olsson-KPDbRyFOTnE-unsplash.jpg"
+                    class="card-img"
+                    alt="First Slide"
+                  />
+                </a>
+              </div>
+              <div class="recipe-info">
+                <a href="#"><h3>Recipe Name</h3></a>
+              </div>
+            </div>
+            <div class="container recipe-card">
+              <div class="img-wrapper">
+                <a href="#">
+                  <img
+                    class="d-block"
+                    src="./pictures/ella-olsson-KPDbRyFOTnE-unsplash.jpg"
+                    class="card-img"
+                    alt="First Slide"
+                  />
+                </a>
+              </div>
+              <div class="recipe-info">
+                <a href="#"><h3>Recipe Name</h3></a>
+              </div>
+            </div>
+            <div class="container recipe-card">
+              <div class="img-wrapper">
+                <a href="#">
+                  <img
+                    class="d-block"
+                    src="./pictures/ella-olsson-KPDbRyFOTnE-unsplash.jpg"
+                    class="card-img"
+                    alt="First Slide"
+                  />
+                </a>
+              </div>
+              <div class="recipe-info">
+                <a href="#"><h3>Recipe Name</h3></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------- Footer --------------------------->
+    <div class="container">
+      <footer
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+      >
+        <div class="col mb-3">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">Home</li>
+            <li class="nav-item mb-2">About Us</li>
+            <li class="nav-item mb-2">Contact Us</li>
+          </ul>
+        </div>
+        <div class="col mb-3">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">Submit Your Recipe</li>
+            <li class="nav-item mb-2">Copyright</li>
+            <li class="nav-item mb-2">Privacy and Cookie Policy</li>
+          </ul>
+        </div>
+        <div class="col"></div>
+        <div class="col mb-3">
+          <a class="social-icon" href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+
+          <a class="social-icon" href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+
+          <a class="social-icon" href="#">
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ----------------------------------------End of Footer -------------------->
+
+    <script src="./Javascript/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="./Javascript/main.js"></script>
+  </body>
+</html>
